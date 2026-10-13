@@ -7,7 +7,7 @@ Period: 2–6 October 2569
 Duration: 5 Days  
 Status: Planned  
 
-Repository: https://github.com/Phanuwatphk/Pet-Adoption-Explorer  
+Repository: https://github.com/khunanon007/Pet-Adoption-Explorerr/blob/main/Final%20sprint/final%20sprint.md  
 
 ---
 
