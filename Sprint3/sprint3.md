@@ -82,27 +82,51 @@ Sprint 3 เป็นการพัฒนาต่อยอดจาก Sprint 
 
 ---
 
-5. Analysis Layer Architecture
+## 5. Analysis Layer Architecture
 
-โครงสร้างหลัก:
+### Project Structure
+
+```text
 Pet-Adoption-Explorer/
-├── src/
-│   ├── analysis/
-│   │   ├── __init__.py
-│   │   └── statistics.py
-│   ├── components/
-│   │   ├── dashboard.py
-│   │   └── statistics_page.py
-│   ├── services/
-│   │   └── pet_service.py
-│   └── utils/
-│       └── data_processing.py
+└── src/
+    ├── analysis/
+    │   ├── __init__.py
+    │   └── statistics.py
+    │
+    ├── components/
+    │   ├── dashboard.py
+    │   └── statistics_page.py
+    │
+    ├── services/
+    │   └── pet_service.py
+    │
+    └── utils/
+        └── data_processing.py
+```
 
-การทำงาน:
-Pet Data (SQLite) -> Pet Service -> Analysis Layer (Pandas/Statistics) -> Visualization (Altair) -> Streamlit UI
+### System Workflow
 
----
+```text
+Pet Data (SQLite)
+       ↓
+   Pet Service
+       ↓
+  Analysis Layer
+ (Pandas / Statistics)
+       ↓
+  Visualization
+     (Altair)
+       ↓
+  Streamlit UI
+```
 
+### Component Responsibilities
+
+- **Pet Data (SQLite):** Stores pet adoption data in the database.
+- **Pet Service:** Retrieves and manages pet data from SQLite.
+- **Analysis Layer:** Uses Pandas and statistical methods to process data and calculate insights.
+- **Visualization:** Uses Altair to create charts and graphs from analysis results.
+- **Streamlit UI:** Displays the dashboard, statistics, and visualizations to users.
 6. System Architecture & Data Flow
 
 SQLite Database
