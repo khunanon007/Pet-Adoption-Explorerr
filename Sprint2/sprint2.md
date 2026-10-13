@@ -133,8 +133,9 @@ Out of Scope:
 
 ---
 
-6. Project Structure
+## 6. Project Structure
 
+```text
 Pet-Adoption-Explorer/
 │
 ├── README.md
@@ -184,8 +185,7 @@ Pet-Adoption-Explorer/
     ├── test_pet_service.py
     ├── test_quiz_engine.py
     └── test_data_processing.py
-
----
+```
 
 7. Tools & Technologies
 
