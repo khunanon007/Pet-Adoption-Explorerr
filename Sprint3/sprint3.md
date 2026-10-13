@@ -118,9 +118,9 @@ Altair Visualization Components
 Streamlit Dashboard Page
 
 ---
+## 7. Project Structure
 
-7. Project Structure
-
+```text
 Pet-Adoption-Explorer/
 │
 ├── README.md
@@ -170,10 +170,13 @@ Pet-Adoption-Explorer/
 │
 ├── Sprint1/
 │   └── Sprint_1.md
+│
 ├── Sprint2/
 │   └── Sprint_2.md
+│
 └── Sprint3/
     └── Sprint_3.md
+```
 
 ---
 
