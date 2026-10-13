@@ -240,15 +240,17 @@ Statistics Page แสดง Summary Metrics และ Visualizations 5 ส่�
 
 ---
 
-11. Daily Task Allocation & Actual Result (25–29 Sep 2026)
+## 11. Daily Task Allocation & Actual Results (25–29 September 2026)
 
-| วันที่ | Planner — ภีม | Coder — ฟีฟ่า | Debugger — โดนัท ผลการดำเนินงาน |
+| Date | Planner — Pheem | Coder — Fifa | Debugger — Donut | Actual Results |
 |---|---|---|---|---|
-| **25 ก.ย. 2569** | กำหนด Goal, Scope และ Requirements | ตรวจสอบ Data Flow และเตรียม Analysis Architecture | ออกแบบ Test Cases สำหรับ Statistics & Visualizations | **Planning & Preparation** ✅ |
-| **26 ก.ย. 2569** | ติดตามงาน Data Processing & Analysis | พัฒนา Analysis Layer (`statistics.py`) และ Data Normalization | ทดสอบ Data Processing, Pandas Functions และ Edge Cases | **Data Processing & Analysis** ✅ |
-| **27 ก.ย. 2569** | ตรวจสอบ Requirements หน้า Statistics Page | พัฒนา Statistics Page และ Render Altair Charts | ทดสอบการแสดงผล Metrics และ Charts บน UI | **Statistics & Visualization** ✅ |
-| **28 ก.ย. 2569** | ติดตาม Advanced Filters & Comparison | พัฒนา Multi-condition Filtering, Sorting และ Comparison Table[cite: 5, 6] | ทดสอบ Filter Combination, Sorting และ State Persistence[cite: 5, 9] | **Advanced Features Completed** ✅ |
-| **29 ก.ย. 2569** | ตรวจสอบ DoD และจัดทำ Final Report | Refactor Code และปรับแต่ง UI Performance | ทำ Final Integration QA และรัน pytest Pass 100% | **Final QA & Report Completed** ✅ |
+| **25 Sep 2026** | Define goals, scope, and requirements | Review data flow and prepare the analysis architecture | Design test cases for statistics and visualizations | Planning & Preparation ✅ |
+| **26 Sep 2026** | Monitor data processing and analysis tasks | Develop the analysis layer (`statistics.py`) and data normalization | Test data processing, Pandas functions, and edge cases | Data Processing & Analysis ✅ |
+| **27 Sep 2026** | Review requirements for the Statistics Page | Develop the Statistics Page and render Altair charts | Test metrics and chart rendering in the UI | Statistics & Visualization ✅ |
+| **28 Sep 2026** | Monitor advanced filters and comparison features | Implement multi-condition filtering, sorting, and the comparison table | Test filter combinations, sorting, and state persistence | Advanced Features Completed ✅ |
+| **29 Sep 2026** | Verify the Definition of Done (DoD) and prepare the final report | Refactor code and optimize UI performance | Perform final integration QA and run `pytest` | Final QA & Report Completed ✅ |
+
+
 
 ---
 
