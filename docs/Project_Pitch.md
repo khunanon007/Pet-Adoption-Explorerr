@@ -72,29 +72,61 @@
 
 ## Web Application
 
-ระบบพัฒนาเป็น **Web Application** โดยใช้ Streamlit และสามารถเปิดใช้งานผ่าน Web Browser
+The system will be developed as a **Web Application** using Streamlit, accessible through a web browser.
 
-ผู้ใช้สามารถใช้งานระบบผ่านอินเทอร์เฟซที่สวยงามและใช้งานง่าย[cite: 1, 3]
+The application will provide a user-friendly and visually appealing interface to help users explore pets and make informed adoption decisions.
 
-ภาพรวมการใช้งาน:
+### Application Overview
 
+```text
 User
   │
-  ↓
+  ▼
 Web Browser
   │
-  ↓
+  ▼
 Pet Adoption Explorer
   │
   ├── Home / Hero Banner
-  ├── Category Filter (Dogs, Cats, Rabbits, Rodents, Birds)[cite: 2]
+  │
+  ├── Category Filter
+  │   └── Dogs, Cats, Rabbits, Rodents, Birds
+  │
   ├── Pet of the Day Highlight
-  ├── Explore (Search, Multi-Filter, Sort)[cite: 4, 5]
-  ├── Match Quiz Engine[cite: 7]
-  ├── Budget Calculator Engine[cite: 8]
-  ├── Pet Comparison Tool[cite: 6]
+  │
+  ├── Explore
+  │   └── Search, Multi-Filter, Sort
+  │
+  ├── Match Quiz Engine
+  │
+  ├── Budget Calculator Engine
+  │
+  ├── Pet Comparison Tool
+  │
   ├── Favorites List (Saved Pets)
-  └── Statistics & Data Visualization (Altair Charts)[cite: 2, 3, 8]
+  │
+  └── Statistics & Data Visualization
+      └── Altair Charts
+```
+
+### Key Features
+
+- **Home / Hero Banner:** Introduces the application and guides users to explore pets.
+- **Category Filter:** Filters pets by animal categories, including dogs, cats, rabbits, rodents, and birds.
+- **Pet of the Day:** Highlights a selected pet each day.
+- **Explore:** Allows users to search, apply multiple filters, and sort pet listings.
+- **Match Quiz Engine:** Recommends pets based on users' preferences and lifestyle.
+- **Budget Calculator:** Helps users estimate the costs of caring for a pet.
+- **Pet Comparison Tool:** Allows users to compare pet characteristics.
+- **Favorites List:** Lets users save pets they are interested in.
+- **Statistics & Data Visualization:** Presents adoption-related data through interactive charts created with Altair.
+
+### Technology Stack
+
+- **Framework:** Streamlit
+- **Interface:** Web Browser
+- **Data Visualization:** Altair
+- **Application Logic:** Python
 
 ---
 
@@ -234,62 +266,80 @@ Streamlit Dashboard Page
 
 # 11. System Architecture
 
-Architecture ของระบบสามารถสรุปได้ดังนี้:
+The system architecture of Pet Adoption Explorer is illustrated below.
 
-                ┌─────────────────────┐
-                │     Web Browser     │
-                │        User         │
-                └──────────┬──────────┘
-                           │
+```text
+                 ┌──────────────────────┐
+                 │     Web Browser      │
+                 │         User         │
+                 └──────────┬───────────┘
+                            │
+                            ▼
+                 ┌──────────────────────┐
+                 │   Streamlit Web UI   │
+                 │      Dashboard      │
+                 └──────────┬───────────┘
+                            │
+                            ▼
+                 ┌──────────────────────┐
+                 │     Pet Service      │
+                 │  Application Logic   │
+                 └──────────┬───────────┘
+                            │
+                ┌───────────┴───────────┐
+                ▼                       ▼
+      ┌──────────────────┐   ┌──────────────────┐
+      │  Match Quiz      │   │   Budget Engine  │
+      │     Engine       │   │                  │
+      └─────────┬────────┘   └─────────┬────────┘
+                │                      │
+                └──────────┬───────────┘
                            ▼
-                ┌─────────────────────┐
-                │  Streamlit Web UI   │
-                │      Dashboard      │
-                └──────────┬──────────┘
-                           │
-                           ▼
-                ┌─────────────────────┐
-                │     Pet Service     │
-                │  Application Logic  │
-                └──────┬────────┬─────┘
-                       │        │
-          ┌────────────┘        └────────────┐
-          ▼                                  ▼
-┌──────────────────┐               ┌──────────────────┐
-│ Match Quiz Engine│               │  Budget Engine   │
-└─────────┬────────┘               └─────────┬────────┘
-          │                                  │
-          └────────────────┬─────────────────┘
-                           │
-                           ▼
-                ┌──────────────────┐
-                │ Data Processing  │
-                │  Normalization   │
-                └────────┬─────────┘
-                         │
-                         ▼
-                ┌──────────────────┐
-                │ SQLite Database  │
-                └────────┬─────────┘
-                         │
-                         ▼
-                ┌──────────────────┐
-                │  Analysis Layer  │
-                │    Statistics    │
-                └────────┬─────────┘
-                         │
-                         ▼
-                ┌──────────────────┐
-                │ Altair Charts    │
-                │  Visualization   │
-                └────────┬─────────┘
-                         │
-                         ▼
-                ┌──────────────────┐
-                │ Streamlit UI     │
-                └──────────────────┘
+                 ┌──────────────────────┐
+                 │   Data Processing    │
+                 │   & Normalization    │
+                 └──────────┬───────────┘
+                            │
+                            ▼
+                 ┌──────────────────────┐
+                 │   SQLite Database    │
+                 └──────────┬───────────┘
+                            │
+                            ▼
+                 ┌──────────────────────┐
+                 │    Analysis Layer    │
+                 │      Statistics      │
+                 └──────────┬───────────┘
+                            │
+                            ▼
+                 ┌──────────────────────┐
+                 │    Altair Charts     │
+                 │   Visualization      │
+                 └──────────┬───────────┘
+                            │
+                            ▼
+                 ┌──────────────────────┐
+                 │    Streamlit UI      │
+                 │  Display Results     │
+                 └──────────────────────┘
+```
 
----
+## Component Responsibilities
+
+- **Web Browser:** Allows users to access and interact with the application.
+- **Streamlit Web UI:** Displays the dashboard and provides the user interface.
+- **Pet Service:** Handles application logic and coordinates pet-related operations.
+- **Match Quiz Engine:** Recommends suitable pets based on user preferences.
+- **Budget Engine:** Estimates the costs of pet ownership.
+- **Data Processing & Normalization:** Cleans and prepares data for consistent use.
+- **SQLite Database:** Stores pet information and application data.
+- **Analysis Layer:** Processes data and calculates statistical insights.
+- **Altair Charts:** Visualizes statistical results through charts.
+- **Streamlit UI:** Presents the results to users in the web application.
+
+## System Workflow
+
+The user interacts with the application through the Streamlit interface. The Pet Service coordinates the application logic and connects to the relevant engines and data-processing components. Data is stored in SQLite and used by the Analysis Layer to generate statistical insights. Altair then visualizes the results, which are displayed through the Streamlit interface.
 
 # 12. Technology Stack
 
