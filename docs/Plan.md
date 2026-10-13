@@ -205,8 +205,9 @@ Pet Adoption Explorer เวอร์ชัน Final ที่สมบูรณ
 
 ---
 
-# 10. Project Documentation Structure
+## Project Structure
 
+```text
 Pet-Adoption-Explorer/
 │
 ├── README.md
@@ -238,6 +239,8 @@ Pet-Adoption-Explorer/
 │
 └── Final Sprint/
     └── Final_Sprint.md
+```
+
 
 ---
 
