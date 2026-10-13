@@ -153,6 +153,6 @@ Sprint 1 established the initial application foundation and interactive Web UI p
 
 | สมาชิก | ชื่อเล่น | Role | หน้าที่ |
 |---|---|---|---|
-| นายชิษณุพงศ์ ซู | คิม | Planner | Defined project scope, requirements, Sprint 1 plan, UI wireframes, documentation, and task allocation. |
-| นายภานุวัฒน์ ผองแก้ว | ฟลุ๊ค | Coder | Developed Streamlit layout, top navigation bar, Home page, search UI, and core UI components. |
-| นายเดโชชิต โตวินัส | ออม | Debugger / QA | Tested UI navigation, component layout responsiveness, edge cases, and verified Sprint 1 prototype functionality. |
+| โดนัท | Planner | Defined project scope, requirements, Sprint 1 plan, UI wireframes, documentation, and task allocation. |
+| ฟีฟ่า | Coder | Developed Streamlit layout, top navigation bar, Home page, search UI, and core UI components. |
+| ภีม | Debugger / QA | Tested UI navigation, component layout responsiveness, edge cases, and verified Sprint 1 prototype functionality. |
