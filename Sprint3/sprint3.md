@@ -7,7 +7,7 @@ Period: 25–29 September 2026
 Duration: 5 Days  
 Status: Completed  
 
-Repository: https://github.com/Phanuwatphk/Pet-Adoption-Explorer  
+Repository: https://github.com/khunanon007/Pet-Adoption-Explorerr/edit/main/Sprint3/sprint3.md
 
 ---
 
