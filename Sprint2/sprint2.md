@@ -281,27 +281,30 @@ is_featured           | INTEGER | สถานะสัตว์เลี้ย�
 
 Sprint 2 มี Automated Tests และ Manual Verification รวม **12 Cases**:
 
-# | Test Area | Test Case | Expected Result | Status
---|-----------|-----------|-----------------|:-----:
-1 | Database | SQLite Initialization & Seeding | สร้าง Tables และโหลดข้อมูลตั้งต้นสำเร็จ | PASS
-2 | Database | Read Pets Query | ดึงข้อมูลสัตว์เลี้ยงพร้อม Field ครบถ้วน | PASS
-3 | Service | Search Pet ("Boba" / "โบบา")[cite: 3, 5] | ค้นพบข้อมูลถูกต้องแบบ Case-insensitive[cite: 3, 5] | PASS
-4 | Service | Category Filtering (Dogs/Cats)[cite: 2] | กรองข้อมูลตรงตามหมวดหมู่ที่เลือก[cite: 2] | PASS
-5 | UI Logic | Pet Comparison (2-3 Pets)[cite: 6] | แสดงการ์ดเปรียบเทียบเรียงขนานกันได้[cite: 6] | PASS
-6 | Quiz Engine| Match Quiz Calculation[cite: 7] | วิเคราะห์คำตอบ 4 ข้อและแนะนำสัตว์เลี้ยงตรงไลฟ์สไตล์[cite: 7] | PASS
-7 | Budget Calc| Total Cost Calculation Slider[cite: 8] | คำนวณ (Initial + Monthly × Month) ถูกต้อง[cite: 8] | PASS
-8 | Favorites | Add/Remove Favorite State[cite: 9] | บันทึกและลบข้อมูลจาก Favorites โดย State ไม่หลุด[cite: 9] | PASS
-9 | Edge Case | Search Not Found[cite: 5] | แสดง Empty State Warning โดยไม่ Crash[cite: 5] | PASS
-10| Edge Case | Missing Image Handle | แสดง Default Cover Image เมื่อไม่มี URL | PASS
-11| Performance| Database Query Response | โหลดข้อมูลขึ้น Streamlit ภายใน < 1 วินาที | PASS
-12| State     | Navigation Page Switching[cite: 1] | สลับหน้าเมนูโดย Session State ไม่สูญหาย[cite: 1, 9] | PASS
+## QA Test Results
 
-QA Result Summary:
-- Total Test Cases: 12
-- Passed: 12 (100%)
-- Failed: 0
-- Critical Bugs: 0
+| # | Test Area | Test Case | Expected Result | Status |
+|---:|---|---|---|:---:|
+| 1 | Database | SQLite Initialization & Seeding | Tables are created and initial data is loaded successfully. | PASS |
+| 2 | Database | Read Pets Query | Retrieves pet data with all required fields. | PASS |
+| 3 | Service | Search Pet ("Boba" / "โบบา") | Finds the correct pet using case-insensitive search. | PASS |
+| 4 | Service | Category Filtering (Dogs/Cats) | Filters pets according to the selected category. | PASS |
+| 5 | UI Logic | Pet Comparison (2–3 Pets) | Displays pet comparison cards side by side. | PASS |
+| 6 | Quiz Engine | Match Quiz Calculation | Analyzes four answers and recommends pets matching the user's lifestyle. | PASS |
+| 7 | Budget Calculator | Total Cost Calculation Slider | Calculates total cost correctly using (Initial Cost + Monthly Cost × Months). | PASS |
+| 8 | Favorites | Add/Remove Favorite State | Adds and removes favorites while preserving session state. | PASS |
+| 9 | Edge Case | Search Not Found | Displays an empty-state warning without crashing. | PASS |
+| 10 | Edge Case | Missing Image Handling | Displays a default cover image when the image URL is missing. | PASS |
+| 11 | Performance | Database Query Response | Loads data into Streamlit within less than one second. | PASS |
+| 12 | State | Navigation Page Switching | Switches between pages without losing session state. | PASS |
 
+### QA Result Summary
+
+- **Total Test Cases:** 12
+- **Passed:** 12
+- **Failed:** 0
+- **Pass Rate:** 100%
+- **Overall Status:** PASS
 ---
 
 13. Contribution Matrix — Member Performance
