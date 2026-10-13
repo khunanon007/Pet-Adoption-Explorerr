@@ -309,4 +309,41 @@ QA Result Summary:
 -------|------|----------------|:-----:
 **โดนัท** | Planner | Sprint Planning, System Architecture, Requirements, DoD & Documentation | **50/50**
 **ภีม** | Coder | Streamlit UI Development, SQLite DB Integration, Service Layer & Core Engines | **50/50**
-**ฟีฟ่า** | Debugger /
+**ฟีฟ่า** | Debugger QA | Test Case Design, Edge Cases Handling, Database Testing & QA Verification | **50/50**
+
+Total Team Score = 150/150
+Team Completion = 100%
+
+---
+
+14. Definition of Done (DoD) Checklists
+
+- [x] Web Application รันบน Streamlit ได้อย่างราบรื่น[cite: 3, 10]
+- [x] เชื่อมต่อกับ SQLite Database และอ่าน/เขียนข้อมูลได้จริง
+- [x] หน้า Top Navigation ทั้งหมดทำงานได้ครบถ้วน[cite: 1]
+- [x] ระบบกรองหมวดหมู่ ค้นหา เปรียบเทียบ คำนวณงบ และ Match Quiz ทำงานได้ถูกต้อง[cite: 2, 5, 6, 7, 8]
+- [x] ระบบจัดการ Favorites ด้วย Session State สมบูรณ์[cite: 9]
+- [x] Automated Tests ผ่านทั้งหมด
+- [x] จัดทำเอกสาร Sprint 2 Report เรียบร้อย
+- [x] โค้ดถูก Commit และ Push ขึ้น GitHub Repository
+
+---
+
+15. Wow! & Whoops!
+
+Wow! (สิ่งที่ทำได้ดี):
+1. SQLite Database Integration: สามารถเปลี่ยนจาก Static Sample Data มาเป็นระบบฐานข้อมูลจริงได้อย่างเรียบร้อย
+2. Dynamic Budget Engine: ระบบคำนวณงบประมาณปรับเปลี่ยนตาม Slider ได้อย่างลื่นไหลและเข้าใจง่าย[cite: 8]
+3. Reliable Session State Handling: แก้ไขปัญหา Session รั่วไหลระหว่างเปลี่ยนหน้า UI ได้ 100%[cite: 9]
+
+Whoops! (ปัญหาและการแก้ไข):
+- Problem: ในช่วงแรกของการสลับหน้าเมนู ค่าใน Favorites หลุดหายเนื่องจาก Streamlit Re-run
+- Solution: ใช้ `st.session_state` ประกาศเป็น Global State ประจำ Session ทำให้เก็บข้อมูลสัตว์เลี้ยงโปรดไว้ได้ตลอดการใช้งาน[cite: 9]
+
+---
+
+16. Sprint 2 Final Status
+
+===================================================
+   PET ADOPTION EXPLORER — SPRINT 2 COMPLETED
+===================================================
