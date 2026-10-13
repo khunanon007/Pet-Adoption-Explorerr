@@ -8,8 +8,8 @@ Presentation: 15–16 September 2026
 Due Date: 18 September 2026
 Status: Completed
 
-Repository: https://github.com/Phanuwatphk/Pet-Adoption-Explorer
-Pull Request: https://github.com/Phanuwatphk/Pet-Adoption-Explorer/pull/1
+Repository: https://github.com/khunanon007/Pet-Adoption-Explorerr/edit/main/Sprint/Sprint1.md
+Pull Request: https://github.com/khunanon007/Pet-Adoption-Explorerr/edit/main/Sprint/Sprint1.md
 
 ---
 
