@@ -6,9 +6,6 @@ Sprint: Sprint 2 — Web UI, API/Database Integration & Interactive Features
 Period: 20–24 September 2569
 Status: Completed
 
-Repository: https://github.com/Phanuwatphk/Pet-Adoption-Explorer
-Pull Request: https://github.com/Phanuwatphk/Pet-Adoption-Explorer/pull/2
-
 ---
 
 1. Sprint Overview
